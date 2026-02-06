@@ -1,0 +1,12 @@
+{"prompt": "Calculate Net Interest Margin by product for UK in Q1 2025", "expected_domain": "Finance", "expected_metrics": ["NII", "NIM"]}
+{"prompt": "Show loans that migrated from Stage 1 to Stage 2 in the last 30 days and compute expected credit loss", "expected_domain": "Risk", "expected_metrics": ["ECL"]}
+{"prompt": "Show monthly NSFR trend and flag months below 100%", "expected_domain": "Treasury", "expected_metrics": ["NSFR"]}
+{"prompt": "Find customers with repeated cash deposits just below reporting thresholds within 7 days", "expected_domain": "AML", "expected_metrics": ["STRUCTURING_FLAG"]}
+{"prompt": "What is the net interest income for mortgages in Q1 2025?", "expected_domain": "Finance", "expected_metrics": ["NII"]}
+{"prompt": "Calculate ECL for all Stage 2 loans in the UK", "expected_domain": "Risk", "expected_metrics": ["ECL"]}
+{"prompt": "Is our NSFR above the regulatory minimum this quarter?", "expected_domain": "Treasury", "expected_metrics": ["NSFR"]}
+{"prompt": "Flag any potential structuring activity on cash deposits in the last week", "expected_domain": "AML", "expected_metrics": ["STRUCTURING_FLAG"]}
+{"prompt": "Compare Net Interest Income across all regions for January 2025", "expected_domain": "Finance", "expected_metrics": ["NII"]}
+{"prompt": "Show average PD by product for UK Stage 2 loans", "expected_domain": "Risk", "expected_metrics": ["ECL"]}
+{"prompt": "What is our total available stable funding for UK in Q1 2025?", "expected_domain": "Treasury", "expected_metrics": ["NSFR"]}
+{"prompt": "Flag transactions that may warrant a SAR filing based on structuring patterns", "expected_domain": "AML", "expected_metrics": ["STRUCTURING_FLAG"]}

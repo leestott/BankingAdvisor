@@ -1,0 +1,14 @@
+[
+  {"month": "2024-07", "region": "UK", "available_stable_funding": 12500000, "required_stable_funding": 11800000},
+  {"month": "2024-08", "region": "UK", "available_stable_funding": 12800000, "required_stable_funding": 12100000},
+  {"month": "2024-09", "region": "UK", "available_stable_funding": 12200000, "required_stable_funding": 12500000},
+  {"month": "2024-10", "region": "UK", "available_stable_funding": 13100000, "required_stable_funding": 12700000},
+  {"month": "2024-11", "region": "UK", "available_stable_funding": 12600000, "required_stable_funding": 12900000},
+  {"month": "2024-12", "region": "UK", "available_stable_funding": 13500000, "required_stable_funding": 13000000},
+  {"month": "2025-01", "region": "UK", "available_stable_funding": 13800000, "required_stable_funding": 13200000},
+  {"month": "2025-02", "region": "UK", "available_stable_funding": 13200000, "required_stable_funding": 13400000},
+  {"month": "2025-03", "region": "UK", "available_stable_funding": 14000000, "required_stable_funding": 13100000},
+  {"month": "2024-07", "region": "EU", "available_stable_funding": 9500000, "required_stable_funding": 9200000},
+  {"month": "2024-08", "region": "EU", "available_stable_funding": 9700000, "required_stable_funding": 9600000},
+  {"month": "2024-09", "region": "EU", "available_stable_funding": 9400000, "required_stable_funding": 9800000}
+]

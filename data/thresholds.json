@@ -1,0 +1,5 @@
+[
+  {"jurisdiction": "UK", "currency": "GBP", "cash_reporting_threshold": 10000},
+  {"jurisdiction": "EU", "currency": "EUR", "cash_reporting_threshold": 10000},
+  {"jurisdiction": "US", "currency": "USD", "cash_reporting_threshold": 10000}
+]

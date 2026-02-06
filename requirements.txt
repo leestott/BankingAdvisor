@@ -1,0 +1,5 @@
+# Core dependencies
+openai>=1.14.0
+jsonschema>=4.21.0
+streamlit>=1.32.0
+pytest>=8.0.0

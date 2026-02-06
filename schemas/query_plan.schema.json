@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://bankquery-copilot-local/schemas/query_plan.schema.json",
+  "title": "QueryPlan",
+  "description": "Structured query plan for banking analytics. The model MUST output JSON conforming to this schema.",
+  "type": "object",
+  "required": ["domain", "intent", "dataset"],
+  "properties": {
+    "domain": {
+      "type": "string",
+      "enum": ["Finance", "Risk", "Treasury", "AML"],
+      "description": "Banking domain classification."
+    },
+    "intent": {
+      "type": "string",
+      "description": "Short description of the query intent, or 'error' for error/refusal objects.",
+      "maxLength": 200
+    },
+    "dataset": {
+      "type": "string",
+      "enum": ["interest", "loans", "liquidity", "transactions"],
+      "description": "Which JSON dataset to query."
+    },
+    "time_range": {
+      "type": "object",
+      "description": "Optional date range filter.",
+      "properties": {
+        "start": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "description": "Start date (YYYY-MM-DD)."
+        },
+        "end": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "description": "End date (YYYY-MM-DD)."
+        }
+      },
+      "required": ["start", "end"]
+    },
+    "filters": {
+      "type": "array",
+      "description": "List of field-level filters to apply.",
+      "items": {
+        "type": "object",
+        "required": ["field", "op", "value"],
+        "properties": {
+          "field": {
+            "type": "string",
+            "description": "Field name to filter on."
+          },
+          "op": {
+            "type": "string",
+            "enum": ["=", "!=", ">", "<", ">=", "<=", "in", "contains"],
+            "description": "Filter operator."
+          },
+          "value": {
+            "description": "Value to compare against. Can be string, number, boolean, or array for 'in' operator."
+          }
+        }
+      }
+    },
+    "group_by": {
+      "type": "array",
+      "description": "Fields to group results by.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "metrics": {
+      "type": "array",
+      "description": "Metrics to compute.",
+      "items": {
+        "type": "string",
+        "enum": ["NII", "NIM", "ECL", "NSFR", "STRUCTURING_FLAG"]
+      }
+    },
+    "post_processing": {
+      "type": "object",
+      "description": "Optional post-processing flags.",
+      "properties": {
+        "sort_by": { "type": "string" },
+        "sort_order": { "type": "string", "enum": ["asc", "desc"] },
+        "limit": { "type": "integer", "minimum": 1 },
+        "flag_threshold": { "type": "number" },
+        "window_days": { "type": "integer", "minimum": 1 },
+        "min_count": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "explanation_requirements": {
+      "type": "object",
+      "description": "What to include in the human-readable explanation.",
+      "properties": {
+        "include_terms_used": { "type": "boolean" },
+        "include_assumptions": { "type": "boolean" },
+        "include_safety_notes": { "type": "boolean" }
+      }
+    },
+    "error": {
+      "type": "object",
+      "description": "Present only when intent='error'. Describes the error/refusal.",
+      "required": ["type", "message", "repair_attempted"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["validation_error", "unsupported_request", "execution_error"]
+        },
+        "message": {
+          "type": "string"
+        },
+        "repair_attempted": {
+          "type": "boolean"
+        }
+      }
+    }
+  },
+  "if": {
+    "properties": { "intent": { "const": "error" } }
+  },
+  "then": {
+    "required": ["domain", "intent", "dataset", "error"]
+  }
+}

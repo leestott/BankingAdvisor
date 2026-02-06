@@ -1,0 +1,14 @@
+[
+  {"loan_id": "LN-001", "customer_id": "CUST-101", "region": "UK", "product": "Mortgage", "stage_ifrs9": 2, "previous_stage": 1, "pd": 0.035, "lgd": 0.25, "ead": 450000, "last_updated": "2025-01-20"},
+  {"loan_id": "LN-002", "customer_id": "CUST-102", "region": "UK", "product": "SME Loan", "stage_ifrs9": 1, "previous_stage": 1, "pd": 0.012, "lgd": 0.35, "ead": 220000, "last_updated": "2025-01-15"},
+  {"loan_id": "LN-003", "customer_id": "CUST-103", "region": "UK", "product": "Mortgage", "stage_ifrs9": 2, "previous_stage": 1, "pd": 0.045, "lgd": 0.20, "ead": 380000, "last_updated": "2025-01-22"},
+  {"loan_id": "LN-004", "customer_id": "CUST-104", "region": "UK", "product": "Credit Card", "stage_ifrs9": 3, "previous_stage": 2, "pd": 0.85, "lgd": 0.60, "ead": 15000, "last_updated": "2025-01-18"},
+  {"loan_id": "LN-005", "customer_id": "CUST-105", "region": "UK", "product": "SME Loan", "stage_ifrs9": 2, "previous_stage": 1, "pd": 0.055, "lgd": 0.30, "ead": 175000, "last_updated": "2025-01-25"},
+  {"loan_id": "LN-006", "customer_id": "CUST-106", "region": "EU", "product": "Mortgage", "stage_ifrs9": 1, "previous_stage": 1, "pd": 0.008, "lgd": 0.22, "ead": 520000, "last_updated": "2025-01-10"},
+  {"loan_id": "LN-007", "customer_id": "CUST-107", "region": "EU", "product": "SME Loan", "stage_ifrs9": 2, "previous_stage": 2, "pd": 0.065, "lgd": 0.40, "ead": 310000, "last_updated": "2025-01-12"},
+  {"loan_id": "LN-008", "customer_id": "CUST-108", "region": "UK", "product": "Mortgage", "stage_ifrs9": 1, "previous_stage": 1, "pd": 0.010, "lgd": 0.18, "ead": 290000, "last_updated": "2025-01-05"},
+  {"loan_id": "LN-009", "customer_id": "CUST-109", "region": "UK", "product": "Credit Card", "stage_ifrs9": 2, "previous_stage": 1, "pd": 0.072, "lgd": 0.55, "ead": 12000, "last_updated": "2025-01-28"},
+  {"loan_id": "LN-010", "customer_id": "CUST-110", "region": "US", "product": "SME Loan", "stage_ifrs9": 1, "previous_stage": 1, "pd": 0.015, "lgd": 0.32, "ead": 480000, "last_updated": "2025-01-08"},
+  {"loan_id": "LN-011", "customer_id": "CUST-111", "region": "UK", "product": "Mortgage", "stage_ifrs9": 2, "previous_stage": 1, "pd": 0.040, "lgd": 0.23, "ead": 350000, "last_updated": "2025-01-30"},
+  {"loan_id": "LN-012", "customer_id": "CUST-112", "region": "UK", "product": "SME Loan", "stage_ifrs9": 3, "previous_stage": 3, "pd": 0.92, "lgd": 0.45, "ead": 95000, "last_updated": "2025-01-02"}
+]

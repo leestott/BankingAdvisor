@@ -1,0 +1,17 @@
+[
+  {"date": "2025-01-15", "region": "UK", "product": "Mortgage", "interest_income": 125000, "interest_expense": 48000, "avg_earning_assets": 5200000},
+  {"date": "2025-01-15", "region": "UK", "product": "SME Loan", "interest_income": 89000, "interest_expense": 31000, "avg_earning_assets": 2800000},
+  {"date": "2025-01-15", "region": "UK", "product": "Credit Card", "interest_income": 210000, "interest_expense": 42000, "avg_earning_assets": 1500000},
+  {"date": "2025-02-15", "region": "UK", "product": "Mortgage", "interest_income": 128000, "interest_expense": 49500, "avg_earning_assets": 5300000},
+  {"date": "2025-02-15", "region": "UK", "product": "SME Loan", "interest_income": 91000, "interest_expense": 32000, "avg_earning_assets": 2850000},
+  {"date": "2025-02-15", "region": "UK", "product": "Credit Card", "interest_income": 215000, "interest_expense": 43000, "avg_earning_assets": 1520000},
+  {"date": "2025-03-15", "region": "UK", "product": "Mortgage", "interest_income": 130000, "interest_expense": 50000, "avg_earning_assets": 5400000},
+  {"date": "2025-03-15", "region": "UK", "product": "SME Loan", "interest_income": 93000, "interest_expense": 33000, "avg_earning_assets": 2900000},
+  {"date": "2025-03-15", "region": "UK", "product": "Credit Card", "interest_income": 220000, "interest_expense": 44000, "avg_earning_assets": 1550000},
+  {"date": "2025-01-15", "region": "EU", "product": "Mortgage", "interest_income": 98000, "interest_expense": 41000, "avg_earning_assets": 4100000},
+  {"date": "2025-02-15", "region": "EU", "product": "Mortgage", "interest_income": 101000, "interest_expense": 42000, "avg_earning_assets": 4200000},
+  {"date": "2025-03-15", "region": "EU", "product": "Mortgage", "interest_income": 103000, "interest_expense": 43000, "avg_earning_assets": 4300000},
+  {"date": "2025-01-15", "region": "US", "product": "Mortgage", "interest_income": 155000, "interest_expense": 62000, "avg_earning_assets": 6800000},
+  {"date": "2025-02-15", "region": "US", "product": "SME Loan", "interest_income": 72000, "interest_expense": 28000, "avg_earning_assets": 2200000},
+  {"date": "2025-03-15", "region": "US", "product": "Credit Card", "interest_income": 190000, "interest_expense": 38000, "avg_earning_assets": 1400000}
+]
